@@ -72,12 +72,7 @@ function AddBookForm({ onAddBook }) {
           {errors.author && <p className="text-red-400 text-sm mt-1">{errors.author}</p>}
         </div>
         
-        <button
-          type="submit"
-          className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-md transition duration-300"
-        >
-          Add Book
-        </button>
+        <button type="submit" className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-md transition duration-300">Add Book</button>
       </form>
     </div>
   );

@@ -7,7 +7,7 @@ function BookItem({ book, onEdit, onDelete }) {
       <div className="flex justify-between items-center">
         <div>
           <h3 className="text-xl font-semibold text-white">{book.title}</h3>
-          <p className="text-purple-200">by {book.author}</p>
+          <p className="text-purple-200">By {book.author}</p>
         </div>
         
         <div className="flex space-x-2">
