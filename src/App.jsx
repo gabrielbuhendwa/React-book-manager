@@ -1,4 +1,3 @@
-// App.jsx
 import React, { useState } from 'react';
 import Header from './components/Header.jsx';
 import BookList from './components/BookList.jsx';
@@ -8,22 +7,21 @@ import DeleteConfirmationModal from './components/DeleteConfirmationModal.jsx';
 
 // Main App component that manages the book application state
 function App() {
-  // State for storing the list of books
+  //Storing the list of books
   const [books, setBooks] = useState([]);
   
-  // State for controlling the edit modal
+  //Controlling the edit modal
   const [showEditModal, setShowEditModal] = useState(false);
   const [bookToEdit, setBookToEdit] = useState(null);
   
-  // State for controlling the delete confirmation modal
+  //Controlling the delete confirmation modal
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const [bookToDelete, setBookToDelete] = useState(null);
 
-  // Function to add a new book to the list
+  //add a new book to the list
   const addBook = (newBook) => {
-    // Create a new book object with a unique ID
     const book = {
-      id: Date.now(), // Simple way to generate unique IDs
+      id: Date.now(), //Generating unique IDs
       title: newBook.title,
       author: newBook.author
     };
@@ -32,9 +30,9 @@ function App() {
     setBooks([book, ...books]);
   };
 
-  // Function to update an existing book
+  //updating an existing book
   const updateBook = (updatedBook) => {
-    // Map through the books array and replace the book with matching ID
+    // Maping through the books array and replace the book with matching ID
     setBooks(books.map(book => 
       book.id === updatedBook.id ? updatedBook : book
     ));
@@ -42,7 +40,7 @@ function App() {
     setShowEditModal(false);
   };
 
-  // Function to delete a book
+  //deleting a book
   const deleteBook = (bookId) => {
     // Filter out the book with the matching ID
     setBooks(books.filter(book => book.id !== bookId));
@@ -50,13 +48,13 @@ function App() {
     setShowDeleteModal(false);
   };
 
-  // Function to open the edit modal with the selected book
+  //Opening the edit modal with the selected book
   const openEditModal = (book) => {
     setBookToEdit(book);
     setShowEditModal(true);
   };
 
-  // Function to open the delete confirmation modal with the selected book
+  //Opening the delete confirmation modal with the selected book
   const openDeleteModal = (book) => {
     setBookToDelete(book);
     setShowDeleteModal(true);
