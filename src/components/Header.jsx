@@ -1,7 +1,6 @@
-// Header.jsx
 import React from 'react';
 
-// Header component that displays the app title and book count
+
 function Header({ bookCount }) {
   return (
     <header className="text-center py-8">

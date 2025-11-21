@@ -36,7 +36,7 @@ function EditBookModal({ book, onUpdateBook, onClose }) {
     return Object.keys(newErrors).length === 0;
   };
 
-  // Function to handle form submission
+  //handleling form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     
@@ -51,7 +51,7 @@ function EditBookModal({ book, onUpdateBook, onClose }) {
     }
   };
 
-  // If no book is selected, don't render the modal
+  // If no book is selected, we don't render the modal
   if (!book) return null;
 
   return (
