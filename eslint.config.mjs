@@ -13,7 +13,9 @@ export default [
   pluginReact.configs.flat.recommended,
   {
     rules: {
-      'react/react-in-jsx-scope': 'off', // This is the key line!
+      'react/react-in-jsx-scope': 'off',
+      'react/prop-types': 'off', // Disables prop-types validation
+      'no-unused-vars': 'warn', // Changes unused vars from error to warning
     },
     settings: {
       react: {
