@@ -1,8 +1,7 @@
-// BookList.jsx
 import React from 'react';
 import BookItem from './BookItem';
 
-// Component to display the list of books
+
 function BookList({ books, onEditBook, onDeleteBook }) {
   // If there are no books, display a message
   if (books.length === 0) {

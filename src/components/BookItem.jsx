@@ -1,7 +1,6 @@
-// BookItem.jsx
 import React from 'react';
 
-// Component to display a single book item
+
 function BookItem({ book, onEdit, onDelete }) {
   return (
     <div className="bg-purple-800 rounded-lg p-4 shadow-lg hover:bg-purple-750 transition duration-300">
@@ -12,7 +11,7 @@ function BookItem({ book, onEdit, onDelete }) {
         </div>
         
         <div className="flex space-x-2">
-          {/* Edit button */}
+          {/***Edit button***/}
           <button
             onClick={() => onEdit(book)}
             className="p-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full transition duration-300"
@@ -23,7 +22,7 @@ function BookItem({ book, onEdit, onDelete }) {
             </svg>
           </button>
           
-          {/* Delete button */}
+          {/***Delete button***/}
           <button
             onClick={() => onDelete(book)}
             className="p-2 bg-red-600 hover:bg-red-700 text-white rounded-full transition duration-300"

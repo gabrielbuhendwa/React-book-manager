@@ -1,7 +1,6 @@
-// AddBookForm.jsx
 import React, { useState } from 'react';
 
-// Form component for adding new books
+
 function AddBookForm({ onAddBook }) {
   // State for form inputs
   const [title, setTitle] = useState('');
@@ -14,11 +13,11 @@ function AddBookForm({ onAddBook }) {
   const validateForm = () => {
     const newErrors = {};
     
-    if (!title.trim()) {
+    if (!title.trim()){
       newErrors.title = 'Book title is required';
     }
     
-    if (!author.trim()) {
+    if (!author.trim()){
       newErrors.author = 'Author name is required';
     }
     

@@ -1,12 +1,11 @@
-// DeleteConfirmationModal.jsx
 import React from 'react';
 
-// Modal component for confirming book deletion
+
 function DeleteConfirmationModal({ book, onConfirmDelete, onClose }) {
-  // If no book is selected, don't render the modal
+  //If no book is selected, don't render the modal
   if (!book) return null;
 
-  // Function to handle the delete confirmation
+  //handleling the delete confirmation
   const handleConfirm = () => {
     onConfirmDelete(book.id);
   };

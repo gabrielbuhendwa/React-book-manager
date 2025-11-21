@@ -63,20 +63,20 @@ function App() {
   return (
     <div className="min-h-screen bg-purple-900 flex flex-col items-center p-4">
       <div className="w-full max-w-2xl">
-        {/* Header component displaying title and book count */}
+        {/***Header component displaying title and book count***/}
         <Header bookCount={books.length} />
         
-        {/* Form to add new books */}
+        {/***Form to add new books***/}
         <AddBookForm onAddBook={addBook} />
         
-        {/* List of books */}
+        {/***List of books***/}
         <BookList 
           books={books} 
           onEditBook={openEditModal} 
           onDeleteBook={openDeleteModal} 
         />
         
-        {/* Edit book modal */}
+        {/***Edit book modal***/}
         {showEditModal && (
           <EditBookModal 
             book={bookToEdit} 
@@ -85,7 +85,7 @@ function App() {
           />
         )}
         
-        {/* Delete confirmation modal */}
+        {/***Delete confirmation modal***/}
         {showDeleteModal && (
           <DeleteConfirmationModal 
             book={bookToDelete} 
