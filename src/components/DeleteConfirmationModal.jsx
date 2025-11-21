@@ -16,9 +16,9 @@ function DeleteConfirmationModal({ book, onConfirmDelete, onClose }) {
       <div className="bg-purple-800 rounded-lg p-6 w-full max-w-md">
         <h2 className="text-2xl font-semibold text-white mb-4">Confirm Deletion</h2>
         
-        <p className="text-purple-200 mb-6">
-          Are you sure you want to delete "{book.title}" by {book.author}?
-        </p>
+       <p className="text-purple-200 mb-6">
+            Are you sure you want to delete &quot;{book.title}&quot; by {book.author}?
+       </p>
         
         <div className="flex space-x-3">
           <button
